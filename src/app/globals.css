@@ -1,0 +1,49 @@
+:root {
+    --background-lighter: #232b2b;
+    --background: #0e1111;
+    --background-darker: #0e1111;
+    --color: #fff;
+    --color-secondary: #414a4c;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--color);
+}
+
+a {
+    color: var(--color-secondary);
+}
+
+nav {
+    display: flex;
+    justify-content:space-between; 
+    align-items: center;
+    border: 1px solid var(--background-lighter);
+    margin-bottom: 30px;
+}
+  
+nav ul {
+    display: flex;
+    list-style: none;
+}
+  
+nav li {
+    padding-left: 1rem;
+}
+  
+nav a {
+    text-decoration: none;
+}
+  
+/*  Extra small devices (phones, 600px and down)  */
+@media only screen and (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    nav ul {
+        padding: 0;
+    }
+}
